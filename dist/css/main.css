@@ -168,8 +168,8 @@ input[class^="btn-"]:hover {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 45rem;
-  margin: 1.2rem; }
+  height: 50rem;
+  margin: 0.5rem; }
   .card__side {
     height: 45rem;
     transition: all 0.8s ease;
