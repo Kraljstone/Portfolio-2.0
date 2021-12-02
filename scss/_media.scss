@@ -295,6 +295,16 @@
     }
   }
 
+  // Work
+  .item-text {
+    &-title,
+    &-wrap,
+    &-category,
+    &-link {
+      font-size: 0.8rem;
+    }
+  }
+
   // FOOTER
   .footer {
     font-size: 0.8rem;
