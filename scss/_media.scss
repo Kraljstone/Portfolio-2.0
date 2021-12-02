@@ -45,4 +45,18 @@
       }
     }
   }
+
+  // Contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message" !important;
+      }
+    }
+  }
 }
