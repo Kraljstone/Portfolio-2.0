@@ -7,6 +7,123 @@
       padding-top: 5rem;
     }
   }
+
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+
+    .card {
+      // FUNCTIONALITY
+      perspective: 150rem;
+      -moz-perspective: 150rem;
+      position: relative;
+      height: 45rem;
+      margin: 0;
+      width: 80%;
+      margin: auto;
+
+      &__side {
+        height: 35rem;
+        &--back {
+          transform: rotateY(180deg);
+
+          &-1 {
+            background-image: linear-gradient(
+              to right bottom,
+              $primary-light,
+              $primary-dark
+            );
+          }
+
+          &-2 {
+            background-image: linear-gradient(
+              to right bottom,
+              $warning-light,
+              $warning-dark
+            );
+          }
+
+          &-3 {
+            background-image: linear-gradient(
+              to right bottom,
+              $danger-light,
+              $dark-dark
+            );
+          }
+        }
+      }
+
+      &:hover &__side--front {
+        transform: rotateY(-180deg);
+      }
+
+      &:hover &__side--back {
+        transform: rotateY(0);
+      }
+
+      // FRONT SIDE STYLING
+      &__picture {
+        background-size: cover;
+        height: 12rem;
+      }
+
+      &__heading {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: right;
+        color: $light-light;
+        position: absolute;
+        top: 5rem;
+        right: 2rem;
+        width: 75%;
+      }
+
+      &__details {
+        padding: 1rem;
+
+        ul {
+          width: 90%;
+
+          li {
+            text-align: center;
+            font-size: 1.1rem;
+            padding: 1rem;
+
+            &:not(:last-child) {
+              border-bottom: 1px solid $secondary-dark;
+            }
+          }
+        }
+      }
+
+      // FRONT SIDE STYLING
+      &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        text-align: center;
+      }
+
+      &__price-box {
+        text-align: center;
+        color: $light-light;
+        margin-bottom: 2rem;
+      }
+
+      &__price-only {
+        font-size: 0.6rem;
+        text-transform: uppercase;
+      }
+
+      &__price-value {
+        font-size: 2rem;
+        font-weight: 300;
+      }
+    }
+  }
 }
 
 // Smartphones
@@ -56,6 +173,124 @@
           "email"
           "phone"
           "message" !important;
+      }
+    }
+  }
+
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+
+    .card {
+      // FUNCTIONALITY
+      perspective: 150rem;
+      -moz-perspective: 150rem;
+      position: relative;
+      height: 45rem;
+      margin: 1px;
+      margin: auto;
+
+      &__side {
+        height: 35rem;
+        width: 100%;
+
+        &--back {
+          transform: rotateY(180deg);
+
+          &-1 {
+            background-image: linear-gradient(
+              to right bottom,
+              $primary-light,
+              $primary-dark
+            );
+          }
+
+          &-2 {
+            background-image: linear-gradient(
+              to right bottom,
+              $warning-light,
+              $warning-dark
+            );
+          }
+
+          &-3 {
+            background-image: linear-gradient(
+              to right bottom,
+              $danger-light,
+              $dark-dark
+            );
+          }
+        }
+      }
+
+      &:hover &__side--front {
+        transform: rotateY(-180deg);
+      }
+
+      &:hover &__side--back {
+        transform: rotateY(0);
+      }
+
+      // FRONT SIDE STYLING
+      &__picture {
+        background-size: cover;
+        height: 12rem;
+      }
+
+      &__heading {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: right;
+        color: $light-light;
+        position: absolute;
+        top: 5rem;
+        right: 2rem;
+        width: 75%;
+      }
+
+      &__details {
+        padding: 1rem;
+
+        ul {
+          width: 90%;
+
+          li {
+            text-align: center;
+            font-size: 1.1rem;
+            padding: 1rem;
+
+            &:not(:last-child) {
+              border-bottom: 1px solid $secondary-dark;
+            }
+          }
+        }
+      }
+
+      // FRONT SIDE STYLING
+      &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        text-align: center;
+      }
+
+      &__price-box {
+        text-align: center;
+        color: $light-light;
+        margin-bottom: 2rem;
+      }
+
+      &__price-only {
+        font-size: 0.6rem;
+        text-transform: uppercase;
+      }
+
+      &__price-value {
+        font-size: 2rem;
+        font-weight: 300;
       }
     }
   }

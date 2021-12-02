@@ -1,6 +1,7 @@
 @import "config";
 @import "utilities";
 @import "grid-items";
+@import "card";
 
 // Import Media Queries
 @import "media";
@@ -88,7 +89,7 @@ img {
     // Header Content
     .header-content {
       text-align: center;
-      padding-top: 20%;
+      padding-top: 15%;
 
       h1 {
         font-size: 4rem;
@@ -178,4 +179,11 @@ img {
       text-align: center;
     }
   }
+}
+
+.heading-secondary {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
