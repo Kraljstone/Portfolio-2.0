@@ -408,7 +408,7 @@ input[class^="btn-"]:hover {
     text-align: center !important;
     margin: auto; }
   .bio p {
-    font-size: 0.8rem !important; }
+    font-size: 0.9rem !important; }
   .items {
     grid-template-columns: repeat(1, 1fr);
     gap: 1px; }
