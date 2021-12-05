@@ -403,8 +403,17 @@ input[class^="btn-"]:hover {
       .card-grid .card__price-value {
         font-size: 2rem;
         font-weight: 300; }
+  .bio-image {
+    width: 70%;
+    text-align: center !important;
+    margin: auto; }
+  .bio p {
+    font-size: 1rem !important; }
+  .items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1px; }
   .item-text-title, .item-text-wrap, .item-text-category, .item-text-link {
-    font-size: 0.8rem; }
+    font-size: 1.5rem; }
   .footer {
     font-size: 0.8rem; } }
 
